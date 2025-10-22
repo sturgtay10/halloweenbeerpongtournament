@@ -1,0 +1,54 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Halloween 2025: Beer Pong Tournament</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="bg" aria-hidden="true">
+    <div class="bg-overlay"></div>
+    <img class="fogimg" src="assets/fog.png" alt="fog" />
+    <img class="batsimg" id="bats" src="assets/bats.png" alt="bats" />
+    <div class="lightning" aria-hidden="true"></div>
+  </div>
+
+  <div class="wrap">
+    <header class="tournament-header">
+      <img src="assets/logo-halloween2025.png" alt="Halloween 2025 Logo" class="tournament-logo">
+    </header>
+
+    <header class="controls-header">
+      <div class="controls">
+        <button id="start-tourney">Start New Tournament</button>
+        <button id="reset-winners">Reset Winners</button>
+        <button id="clear-all">Clear All</button>
+      </div>
+    </header>
+
+    <div class="bracket-wrap">
+      <div id="bracket" class="bracket"></div>
+    </div>
+
+    <footer class="footer-note">
+      <div class="small">Tip: Start a new tournament and enter 2–16 team names. The bracket auto-balances byes and advances them.</div>
+    </footer>
+  </div>
+
+  <div id="champion-popup" class="champion-popup hidden">
+    <div class="popup-content">
+      <img src="assets/champions.png" class="popup-img" alt="Halloween Champion">
+      <h2 id="champion-name"></h2>
+      <button id="close-popup">Close</button>
+    </div>
+  </div>
+
+  <audio id="sfx-ghost" src="assets/sfx/ghost.wav" preload="auto"></audio>
+  <audio id="sfx-light" src="assets/sfx/lightning.wav" preload="auto"></audio>
+  <audio id="sfx-witch" src="assets/sfx/witch.wav" preload="auto"></audio>
+
+<script src="script.js"></script>
+</body>
+</html>
